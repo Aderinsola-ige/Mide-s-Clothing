@@ -1,0 +1,135 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background-color: #fff;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #111;
+  }
+  
+  nav a {
+    margin-left: 1.5em;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 6em 2em;
+    background: linear-gradient(to right, #fce4ec, #f8bbd0);
+    color: #111;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .hero button {
+    padding: 0.8em 1.5em;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: #333;
+  }
+/* Shop Section */
+.shop {
+    padding: 4em 2em;
+    text-align: center;
+  }
+  
+  .shop h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #111;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1em;
+  }
+  
+  .product h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .product p {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  
+  .product button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+  }
+  
+  .product button:hover {
+    background-color: #333;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+    
