@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thank You!</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 5em;
+      background-color: #fefefe;
+    }
+    .msg {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    .ref {
+      color: #888;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="msg">Thank you for your order! 💖</h1>
+  <p class="ref">Your transaction reference: <span id="ref"></span></p>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById("ref").textContent = urlParams.get("ref");
+  </script>
+</body>
+</html>
