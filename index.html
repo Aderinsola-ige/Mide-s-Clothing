@@ -9,22 +9,23 @@
 <body>
 
   <header>
-    <h1>Mide</h1>
+    <h1>MideFashionHub</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <h2>Unleash Your Style</h2>
-      <p>Shop the latest trends with Mide.</p>
-      <button>Shop Now</button>
+      <p>Shop the latest trends with MideFashionHub.</p>
+      <a class="shop" href="#shop">Shop now</a>
     </section>
-    <section class="shop">
+    <section id="shop">
+
         <h2>Featured Products</h2>
       
         <div class="products">
@@ -48,11 +49,57 @@
             <p>7,000</p>
             <button>Add to Cart</button>
           </div>
+
+          <div class="product">
+            <img src="/Images/bag 9 8k.jpg" alt="Wide-Leg Pants" />
+            <h3>bag</h3>
+            <p>7,000</p>
+            <button>Add to Cart</button>
+          </div>
+          
+          <div class="product">
+            <img src="/Images/bag 13 7k.jpg" alt="Wide-Leg Pants" />
+            <h3>Tote bag</h3>
+            <p>7,000</p>
+            <button>Add to Cart</button>
+          </div>
         </div>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          MideFashionHub is a modern fashion brand dedicated to helping people look and feel confident every day. We offer carefully curated collections of clothing and accessories designed for comfort, style, and self-expression.
+        </p>
+        <p>
+          Our goal is to make fashion affordable, accessible, and empowering — whether you're dressing for work, weekends, or special occasions.
+        </p>
+      </section>
+      
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          📧 Email: <a href="mailto:info@mideclothing.com">info@mideclothing.com</a><br />
+          📱 Phone: +234 901 234 5678<br />
+          📍 Location: Lagos, Nigeria
+        </p>
+        <p>We’re available Monday–Saturday, 9:00AM – 6:00PM.</p>
       </section>
       
   </main>
 
   <script src="newmidey.js"></script>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Mide Clothing. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="newmideycart.html">Cart</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>
