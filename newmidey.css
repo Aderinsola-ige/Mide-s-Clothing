@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     background-color: #f1eff1;
   }
   
-  /* Header Styles */
+
   header {
     position: fixed;
     top: 0;
@@ -189,3 +189,90 @@
     background-color: palevioletred;
   }
   
+  /* ===================== MOBILE RESPONSIVE ===================== */
+@media (max-width: 768px) {
+
+  /* Fix overlapping due to fixed header */
+  body {
+    padding-top: 80px;
+  }
+
+  /* Header */
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0.5em;
+  }
+
+  nav a {
+    margin: 0.5em 0;
+    font-size: 1rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 4em 1.5em;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .shop {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* Product Grid */
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* About & Contact Sections */
+  #about, #contact {
+    padding: 1.5em 1em;
+    width: 95%;
+    margin: 2em auto;
+    font-size: 1rem;
+  }
+
+  #about h2, #contact h2 {
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+
+  /* Footer */
+  .site-footer {
+    font-size: 0.85rem;
+    padding: 2em 1em;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.7em;
+    margin-top: 1em;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 0.3em 0;
+  }
+}
