@@ -204,16 +204,24 @@
     padding: 1em;
   }
 
+  header h1{
+    position: absolute;
+    left: 0.5em;
+    top: 0.1em;
+  }
+
   nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
-    margin-top: 0.5em;
+ position: absolute;
+ top: 2.99em;
   }
 
   nav a {
     margin: 0.5em 0;
     font-size: 1rem;
+    
   }
 
   /* Hero Section */
