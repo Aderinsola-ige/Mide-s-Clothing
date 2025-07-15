@@ -215,7 +215,7 @@
   nav {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 50px;
  position: absolute;
  top: 2.99em;
  
@@ -228,7 +228,7 @@
   }
   
   #cart-icon{
-    position: absolute;
+    position: fixed;
     top: 0.1em;
     right: 1em;
     background-color: palevioletred;
