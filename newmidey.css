@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 2em;
+    padding: 1.5em 7em;
     background-color: #f6f6f6;
     border-bottom: 1px solid #ddd;
   }
@@ -30,6 +30,7 @@
     color: #111;
     color: palevioletred;
     font-style: italic;
+    margin-left: -3em;
   }
   
   
@@ -201,12 +202,13 @@
   header {
     flex-direction: column;
     text-align: center;
-    padding: 1em;
+    padding: 3em;
+   
   }
 
   header h1{
     position: absolute;
-    left: 0.5em;
+    left: 2.99em;
     top: 0.1em;
   }
 
@@ -216,12 +218,20 @@
     gap: 10px;
  position: absolute;
  top: 2.99em;
+ 
   }
 
   nav a {
     margin: 0.5em 0;
     font-size: 1rem;
     
+  }
+  
+  #cart-icon{
+    position: absolute;
+    top: 0.1em;
+    right: 1em;
+    background-color: palevioletred;
   }
 
   /* Hero Section */
@@ -283,4 +293,17 @@
     display: block;
     margin: 0.3em 0;
   }
+
+}
+
+.cart-icn{
+position: fixed;
+top: 20px;
+right: 20px;
+font-size: 1.2em;
+background-color:#111 ;
+color: #fff;
+padding: 0.5em 1em;
+border-radius: 20px;
+text-decoration: none;
 }

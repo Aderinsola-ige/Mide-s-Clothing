@@ -8,19 +8,11 @@ let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 let cartIcon = document.createElement("a");
 cartIcon.href = "newmideycart.html";
 cartIcon.id = "cart-icon";
+cartIcon.classList.add('cart-icn');
 cartIcon.textContent = `🛒 ${cartItems.length}`;
 document.body.appendChild(cartIcon);
 
 // Style it
-cartIcon.style.position = "fixed";
-cartIcon.style.top = "20px";
-cartIcon.style.right = "20px";
-cartIcon.style.fontSize = "1.2em";
-cartIcon.style.backgroundColor = "#111";
-cartIcon.style.color = "#fff";
-cartIcon.style.padding = "0.5em 1em";
-cartIcon.style.borderRadius = "20px";
-cartIcon.style.textDecoration = "none";
 
 
 // Add to cart function
