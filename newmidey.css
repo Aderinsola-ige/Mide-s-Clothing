@@ -27,7 +27,6 @@
   
   header h1 {
     font-size: 2em;
-    color: #111;
     color: palevioletred;
     font-style: italic;
     margin-left: -3em;
@@ -35,10 +34,11 @@
   
   
   nav a {
-    margin-left: 1.5em;
+    margin-right: 10em;
     text-decoration: none;
     color: #444;
     font-weight: 500;
+   
   }
   
   nav a:hover {
@@ -190,10 +190,9 @@
     background-color: palevioletred;
   }
   
-  /* ===================== MOBILE RESPONSIVE ===================== */
+ 
 @media (max-width: 768px) {
 
-  /* Fix overlapping due to fixed header */
   body {
     padding-top: 80px;
   }
@@ -215,7 +214,7 @@
   nav {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 10px;
  position: absolute;
  top: 2.99em;
  
@@ -224,7 +223,7 @@
   nav a {
     margin: 0.5em 0;
     font-size: 1rem;
-    
+  
   }
   
   #cart-icon{

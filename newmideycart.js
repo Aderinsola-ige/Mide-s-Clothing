@@ -76,7 +76,7 @@ if (cartItems.length === 0) {
   updateCartTotal();
 }
 
-// 🔁 Function to update the cart total dynamically
+// Function to update the cart total 
 function updateCartTotal() {
   const cartTotalEl = document.getElementById("cart-total");
   let total = 0;
@@ -106,13 +106,14 @@ document.getElementById("checkout-btn").addEventListener("click", () => {
   });
 
   const handler = PaystackPop.setup({
-    key: 'pk_test_24a8e9631950ef62c13aa73b96bdfc5dfdb86b54', // Your test public key
-    email: "test@example.com", // Replace with buyer email if available
-    amount: total * 100, // Convert to kobo (Paystack uses kobo)
+    key: 'pk_test_24a8e9631950ef62c13aa73b96bdfc5dfdb86b54', 
+    email: "test@example.com", 
+    amount: total * 100, 
     currency: "NGN",
     ref: '' + Math.floor(Math.random() * 1000000000 + 1),
     callback: function (response) {
-      // Success! Redirect to confirmation page
+
+      // Redirect to confirmation page
       localStorage.removeItem("cart"); // Clear the cart
       window.location.href = "thankyou.html?ref=" + response.reference;
     },
