@@ -15,6 +15,9 @@ cartIcon.textContent = `🛒 ${cartItems.length}`;
 document.body.appendChild(cartIcon);
 
 
+const modal = document.getElementById('custom-modal');
+const modalMessage = document.getElementById('modal-message');
+const closeSpan = document.getElementsByClassName('close')[0];
 // Add to cart function
 addToCartButtons.forEach(button => {
   button.addEventListener("click", () => {
@@ -22,10 +25,27 @@ addToCartButtons.forEach(button => {
     const name = product.querySelector("h3").textContent;
     const price = product.querySelector("p").textContent;
     const image = product.querySelector("img").src;
-    alert('Added to cart')
+    
     cartItems.push({ name, price, image });
     localStorage.setItem("cart", JSON.stringify(cartItems));
-
+    
     cartIcon.textContent = `🛒 ${cartItems.length}`;
+
+    function showModal (message){
+      modal.style.display = 'block';
+      modalMessage.innerText = message;
+    }
+    closeSpan.onclick = function(){
+      modal.style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal){
+        modal.style.display = 'none';
+      }
+    }
+    showModal ('Item has been added to cart')
+
   });
 });
+

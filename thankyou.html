@@ -18,12 +18,23 @@
       color: #888;
       font-size: 1em;
     }
+    .cont{
+      background: palevioletred;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #fefefe;
+      padding: 0.5em 1em;
+    }
+    .cont:hover{
+    background-color: rgb(196, 13, 74);
+  }
   </style>
 </head>
 <body>
   <h1 class="msg">Thank you for your order! 💖</h1>
   <p class="ref">Your transaction reference: <span id="ref"></span></p>
-
+<br><h2><a class="cont" href="index.html">Continue shopping</a></h2>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     document.getElementById("ref").textContent = urlParams.get("ref");
